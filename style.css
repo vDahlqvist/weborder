@@ -1,0 +1,58 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('./assets/bg-img.jpg'); /* Try with ./ prefix */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-attachment: fixed;
+   
+
+}
+header {
+    background-color: green;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-links {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.header-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.header-links a:hover {
+    text-decoration: underline;
+}
+.content-box {
+    position:absolute;
+    background-color: rgba(248, 248, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    color: red;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    max-width: 600px;
+    
+
+}
+.container {
+    position: relative;
+}
