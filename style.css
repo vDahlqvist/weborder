@@ -9,7 +9,8 @@ body, html {
     flex-direction: column;
     min-height: 100vh;
     background-attachment: fixed;
-   
+    scroll-padding-top: 150px;
+
 
 }
 header {
@@ -24,6 +25,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1000;
 }
 
 .header-links {

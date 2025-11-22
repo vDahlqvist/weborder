@@ -4,6 +4,6 @@ window.onload = function() {
 
     boxes.forEach((box, index) => {
         box.style.left = Math.random() * (window.innerWidth - 620) + "px"; 
-        box.style.top = (index * 220 + 200) + "px"; // Added 200px for header height
+        box.style.top = (index * 600 + 200) + "px"; // Added 200px for header height
     });
 };
