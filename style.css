@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('./assets/bg-img.jpg'); /* Try with ./ prefix */
+    background-image: url('./assets/bg-img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -14,9 +14,9 @@ body, html {
 
 }
 header {
-    background-color: green;
+    background-color: #326b18b5;
     color: white;
-    padding: 10px 0;
+    padding: 5px 0;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -26,12 +26,13 @@ header {
     left: 0;
     right: 0;
     z-index: 1000;
+    transition: transform 0.3s ease; 
 }
 
 .header-links {
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin: 5px;
 }
 .header-links a {
     color: white;
@@ -67,10 +68,10 @@ header {
 
 
 .footer {
-    background-color: green;
+    background-color: #326b18b5;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
     margin-top: auto;
     position: relative;
     bottom: 0;

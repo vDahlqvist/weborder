@@ -25,6 +25,24 @@ function positionBoxes() {
     container.style.height = parseInt(lastBox.style.top) + lastBox.offsetHeight + 20 + "px";
 }
 
+// Hide/show header on scroll
+let lastScrollTop = 0;
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > lastScrollTop && scrollTop > 100) {
+        // Scrolling down & past 100px - hide header
+        header.style.transform = 'translateY(-100%)';
+    } else {
+        // Scrolling up - show header
+        header.style.transform = 'translateY(0)';
+    }
+    
+    lastScrollTop = scrollTop;
+});
+
 // Run on page load
 window.onload = positionBoxes;
 
